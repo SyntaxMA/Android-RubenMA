@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".region6Fragment">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/kalos"
+        app:layout_constraintBottom_toTopOf="@+id/texto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KALOS"
+        android:textColor="#5C00FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagen2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/chespin"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion"
+        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imagen2"/>
+
+    <ImageView
+        android:id="@+id/imagen2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fennekin"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion"
+        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintLeft_toRightOf="@id/imagen"
+        app:layout_constraintRight_toLeftOf="@id/imagen3"/>
+
+    <ImageView
+        android:id="@+id/imagen3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/froakie"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion"
+        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintLeft_toRightOf="@id/imagen2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Es la región del mundo Pokémon donde se desarrolla la trama de los videojuegos Pokémon X y Pokémon Y en la sexta generación. \n \nLa región está basada en Francia y su capital es Ciudad Luminalia, cuya inspiración en París se aprecia sobre todo en la Torre Prisma, monumento semejante a la Torre Eiffel. "
+        android:textColor="#5C00FF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonSiguiente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen2" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D6CC0B"
+        android:text="Next"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/descripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/botondetras"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/botondetras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D6CC0B"
+        android:text="Back"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toBottomOf="@id/descripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/botonSiguiente"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

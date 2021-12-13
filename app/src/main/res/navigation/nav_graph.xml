@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/recyclerPokemonsFragment"
+        android:name="com.company.room.RecyclerPokemonFragment"
+        android:label="pokemons"
+        tools:layout="@layout/fragment_recycler_pokemons" />
+    <fragment
+        android:id="@+id/recyclerAlfabeticoFragment"
+        android:name="com.company.room.RecyclerAlfaFragment"
+        android:label="Alfabetico"
+        tools:layout="@layout/fragment_recycler_pokemons" />
+
+    <action
+        android:id="@+id/action_mostrarPokemonFragment"
+        app:destination="@id/mostrarPokemonFragment" />
+    <action
+        android:id="@+id/action_nuevoPokemonFragment"
+        app:destination="@id/nuevoPokemonFragment" />
+
+    <fragment
+        android:id="@+id/nuevoPokemonFragment"
+        android:name="com.company.room.PokemonNuevoFragment"
+        android:label="Creacion"
+        tools:layout="@layout/fragment_nuevo_pokemon" />
+    <fragment
+        android:id="@+id/mostrarPokemonFragment"
+        android:name="com.company.room.PokemonFragment"
+        android:label="Detalles"
+        tools:layout="@layout/fragment_mostrar_pokemon" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.company.room.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+<!--regiones-->
+
+    <fragment
+        android:id="@+id/region1Fragment"
+        android:name="com.company.room.region1Fragment"
+        android:label="Kanto"
+        tools:layout="@layout/fragment_region1" />
+    <fragment
+        android:id="@+id/region2Fragment"
+        android:name="com.company.room.region2Fragment"
+        android:label="Johto"
+        tools:layout="@layout/fragment_region2" />
+    <fragment
+        android:id="@+id/region3Fragment"
+        android:name="com.company.room.region3Fragment"
+        android:label="Hoenn"
+        tools:layout="@layout/fragment_region3" />
+    <fragment
+        android:id="@+id/region4Fragment"
+        android:name="com.company.room.region4Fragment"
+        android:label="Sinnoh"
+        tools:layout="@layout/fragment_region4" />
+    <fragment
+        android:id="@+id/region5Fragment"
+        android:name="com.company.room.region5Fragment"
+        android:label="Teselia"
+        tools:layout="@layout/fragment_region5" />
+    <fragment
+        android:id="@+id/region6Fragment"
+        android:name="com.company.room.region6Fragment"
+        android:label="Kalos"
+        tools:layout="@layout/fragment_region6" />
+    <fragment
+        android:id="@+id/region7Fragment"
+        android:name="com.company.room.region7Fragment"
+        android:label="Alola"
+        tools:layout="@layout/fragment_region7" />
+    <fragment
+        android:id="@+id/region8Fragment"
+        android:name="com.company.room.region8Fragment"
+        android:label="Galar"
+        tools:layout="@layout/fragment_region8" />
+
+    <action
+        android:id="@+id/action_region1Fragment"
+        app:destination="@id/region1Fragment" />
+    <action
+        android:id="@+id/action_region2Fragment"
+        app:destination="@id/region2Fragment" />
+    <action
+        android:id="@+id/action_region3Fragment"
+        app:destination="@+id/region3Fragment"/>
+    <action
+        android:id="@+id/action_region4Fragment"
+        app:destination="@+id/region4Fragment"/>
+    <action
+        android:id="@+id/action_region5Fragment"
+        app:destination="@+id/region5Fragment"/>
+    <action
+        android:id="@+id/action_region6Fragment"
+        app:destination="@+id/region6Fragment"/>
+    <action
+        android:id="@+id/action_region7Fragment"
+        app:destination="@+id/region7Fragment"/>
+    <action
+        android:id="@+id/action_region8Fragment"
+        app:destination="@+id/region8Fragment"/>
+</navigation>

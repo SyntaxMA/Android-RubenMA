@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/recyclerPokemonsFragment"
+        android:icon="@drawable/pokedex"
+        android:title="Pokédex" />
+
+    <item
+        android:id="@+id/recyclerAlfabeticoFragment"
+        android:icon="@drawable/letra"
+        android:title="PokeAlfabetico" />
+
+    <item
+        android:id="@+id/region1Fragment"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Regiones" />
+
+</menu>
